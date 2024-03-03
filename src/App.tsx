@@ -1,5 +1,6 @@
 import './App.css'
-import {UreducerHookTest} from "./components/UreducerHookTest.tsx";
+import {UrHookTestWithInput} from "./components/UrHookTestWithInput.tsx";
+import {UrHookTest} from "./components/UrHookTest.tsx";
 
 
 function App() {
@@ -9,9 +10,9 @@ function App() {
         <div className='flex flex-col gap-4'>
             {/*<UcbHookTest/>*/}
             {/*<DemoUc/>*/}
-            {/*<UrHookTest/>*/}
-            {/*<UrHookTestWithInput/>*/}
-            <UreducerHookTest/>
+            <UrHookTest/>
+            <UrHookTestWithInput/>
+            {/*<UreducerHookTest/>*/}
         </div>
 
     )

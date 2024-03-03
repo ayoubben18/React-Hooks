@@ -4,7 +4,6 @@ export const UrHookTestWithInput = () => {
     const inputRef = useRef<HTMLInputElement | null>(null);
     useEffect(() => {
         inputRef.current?.focus();
-
     }, []);
     const show = () => {
         console.log(inputRef.current?.value)

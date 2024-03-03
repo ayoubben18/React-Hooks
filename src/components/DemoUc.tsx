@@ -1,7 +1,7 @@
 import {useState} from 'react';
 
 import {Card} from "./Card.tsx";
-import {CardContext} from "./context.ts";
+import {CardContext, StringContext} from "./context.ts";
 
 export interface User {
     isSelected: boolean;
@@ -16,9 +16,9 @@ export const DemoUc = () => {
 
     return (
         <div>
-            <CardContext.Provider value={user}>
+            <StringContext.Provider value={null}>
                 <Card/>
-            </CardContext.Provider>
+            </StringContext.Provider>
         </div>
     )
 };
